@@ -12,14 +12,14 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #333;
+    background-image: url("https://i.pinimg.com/originals/5c/42/80/5c42801d270eedcd5b117bddd65f9de0.jpg");
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
 
 h1 {
-    color: #FFF;
+    color: rgb(0, 0, 0);
     margin: 20px 0;
 }
 
@@ -36,32 +36,37 @@ h1 {
     border: 0;
 }
 .busca button {
+    
+    margin-right: 25px;
     padding: 10px;
     font-size: 15px;
     border: 0;
-    background-color: #555;
-    color: #FFF;
-    border-radius: 5px;
-    margin-left: 10px;
+    
+    
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     cursor: pointer;
-}
-.busca button:hover {
     background-color: #444;
+    border-radius: 5px;
+    margin-left: 20px;
 }
 
 .resultado {
     width: 300px;
     display: none;
-    border: 1px dotted #FFF;
+    border: 1px solid rgb(255, 255, 255);
     margin-top: 20px;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.2);
-    transition: all linear 1s;
+    background-color: rgba(134, 134, 134, 0.4);
+    backdrop-filter: blur(10px);
+    transition: all linear .5s;
 }
 
 .titulo {
     width: 100%;
-    color: #FFF;
+    color: rgb(0, 0, 0);
     font-size: 25px;
     font-weight: bold;
     text-align: center;
@@ -82,13 +87,13 @@ h1 {
 }
 .tempTitulo,
 .ventoTitulo {
-    color: #777;
+    color: rgb(63, 63, 63);
     font-size: 16px;
     margin-bottom: 5px;
 }
 .tempInfo,
 .ventoInfo {
-    color: #FFF;
+    color: rgb(0, 0, 0);
     font-size: 30px;
     font-weight: bold;
 }
@@ -119,7 +124,7 @@ h1 {
 
 .aviso {
     display: flex;
-    color: #FFF;
+    color: rgb(0, 0, 0);
     padding-top: 20px;
 }
 
